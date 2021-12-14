@@ -22,7 +22,7 @@
 	<input type="text" name="Publication_Yr"/><br><br>
 
 	<label>Author Name</label>
-	<input type="text" name"Author_Name"/>
+	<input type="text" name="Author_Name"/>
 	<input type="submit" name="submit" value="Submit"/>
 </form>
 <br>
