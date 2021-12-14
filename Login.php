@@ -25,7 +25,8 @@ if (isset($_POST['submit'])){
 $Username=$_POST['Username'];
 $sql = "SELECT * FROM website_users
 	WHERE(Username LIKE  '$Username')";
-if (mysqli_query($link,$sql)){
+$result = mysqli_query($link,$sql);
+if (mysqli_num_rows($result)>0){
 	echo "You have logged in!";
 }else{
  echo "Error:Incorrect username";
